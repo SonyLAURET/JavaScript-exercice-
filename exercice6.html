@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>les Evénements</title>
+    <meta charset='UTF-8'>
+</head>
+
+<body>
+    <script>
+        function ColorDiv(event) {
+            switch (event) {
+                case 'blue':
+                    document.getElementById('monDiv').style.backgroundColor = 'blue';
+                    break;
+
+                case 'rouge':
+                    document.getElementById('monDiv').style.backgroundColor = 'red';
+                    break;
+
+                case 'vert':
+                    document.getElementById('monDiv').style.backgroundColor = 'green';
+                    break;
+
+                default:
+                document.getElementById('monDiv').style.backgroundColor = 'black';
+                    break;
+            }
+        
+        }
+    </script>
+    <input type="button" onclick="ColorDiv('rouge')" value="Rouge">
+    <input type="button" onclick="ColorDiv('blue')" value="Bleu">
+    <input type="button" onclick="ColorDiv('vert')" value="Vert">
+    <div id='monDiv' style="height: 150px; width:150px;background-color: black"></div>
+</body>
+
+</html>
