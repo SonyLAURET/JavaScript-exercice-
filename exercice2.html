@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <script type="text/JavaScript">
+    var b = 4;
+    // ici,on test la portée de la variable a.
+    //si on a "a=12", a est global et donc ça valeur sera 12
+    var a=12;
+    function MultiplierPar2(b){
+     a = parseInt(b)*2;
+      return a;
+    }
+    document.write("le double de ",b," est ",MultiplierPar2(b),"<br/>");
+    document.write("le valeur de a est ",a);
+     </script>
+</body>
+
+</html>
