@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head><title>les fonctions</title></head>
+    <body>
+        <script>
+        var notes = [15,12,18,14,16,16,19,13,11,10,16,15];
+        function moyenne(){
+            var moyenne = 0;
+            for (var i= 0; i < notes.length; i++) {
+                var element = notes[i];
+               moyenne += element; 
+            }
+            return (moyenne/notes.length).toFixed(2);
+        }
+        //alert("la moyenne est "+moyenne());
+        document.write("la moyenne est "+moyenne());
+        </script>
+
+    </body>
+</html>
