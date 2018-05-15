@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>les tableaux</title>
+</head>
+
+<body>
+    <input id="prenom" type="text">
+    <script>
+        var tableauPrenom = {
+            "anatole": 19,
+            "bernard": 45,
+            "christophe": 34,
+            "dominique": 55,
+            "franck": 28,
+            "georges": 78,
+            "lucas": 12,
+            "madeleine": 30,
+            "pierre": 25
+        };
+
+        function age() {
+            var capture = document.getElementById('prenom').value;
+            if (capture = typeof null) {
+                return alert("remplissez le camps svp")
+            } else {
+                return alert(capture.charAt(0).toUpperCase() + capture.slice(1) + " a " + tableauPrenom[capture] + " ans.");
+            }
+        } 
+    </script>
+    <input id="age" onclick="age()" type="button" value="Quel âge as-tu ?">
+</body>
+
+</html>
